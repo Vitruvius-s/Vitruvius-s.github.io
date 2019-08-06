@@ -1,0 +1,356 @@
+@import "././header";
+@import "././main";
+@import "././footer";
+@import "././main-catalog";
+@import "././main-catalog-item";
+@import "././main-contact";
+@font-face{
+  font-family: "PT Sans Narrow";
+  src:url("../font/ptsansnarrow.woff2") format("woff2");
+  src:url("../font/ptsansnarrowbold.woff2") format("woff2");
+}
+
+$color-text:#ffffff;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:"Areal","PT Sans Narrow",sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-text;
+  text-transform: uppercase;
+  background-color: #000000;
+}
+
+.body-index {
+
+  background-image: url("../img/bg_1.png");
+  background-position:top center;
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  font: inherit;
+  text-align: center;
+  color: $color-text;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #000000;
+  border:none;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  color: #000000;
+  background-color: #f8f3f0;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  display: none;
+}
+
+.maps-img::before{
+  content: "";
+  position: absolute;
+  background-image: url("../img/map.png");
+  width: 550px;
+  height: 600px;
+  z-index: -3;
+}
+
+@keyframes opacity {
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.modal-show {
+  display: block;
+  animation-name: opacity;
+  animation-duration: 0.6s;
+}
+
+/*.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}*/
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-login {
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  width: 300px;
+  padding: 50px 80px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 3px;
+  top: 10px;
+  left: 2px;
+  background-color: #d0d0d0;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-login h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 15px;
+  padding-right: 40px;
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+
+.login-form .login-help{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.login-icon-user {
+  background-image: url("../img/user.svg");
+  background-position: 265px center;
+  background-repeat: no-repeat;
+  background-size: 6%;
+}
+
+.login-icon-password {
+  background-image: url("../img/lock.svg");
+  background-position: 265px center;
+  background-repeat: no-repeat;
+  background-size: 6%;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:focus,
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 6.5px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.modal-map {
+  top: 50%;
+  left: 52.1%;
+  width: 700px;
+  height: 600px;
+  margin-left: -390px;
+  margin-top: -280px;
+  border: 7px solid white;
+}
+
+.modal-map p {
+  margin: 0;
+}
+
+.modal-appointment {
+  top:50%;
+  left: 50%;
+  padding:0 20px;
+  width: 600px;
+  height: 270px;
+  margin-left: -310px;
+  margin-top: -150px;
+}
+
+.modal-appointment h2 {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.modal-appointment .button {
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 0;
+}
+
+.appointment-info {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment-item {
+  width: 140px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.appointment-item input {
+  box-sizing: border-box;
+  font: inherit;
+  width: 140px;
+  padding-top:8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  margin-left: 1px;
+  background-color: #f8f5f2;
+  border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+  border-color: #663d15;
+}
+
+.appointment-item label {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}

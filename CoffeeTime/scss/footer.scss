@@ -1,0 +1,73 @@
+.main-footer {
+  color: #ffffff;
+  background-color: #212121;
+  background-image: url("../img/pattern-dark.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  margin-top: 65px;
+  padding: 60px 0;
+}
+
+.footer-contact {
+  width: 320px;
+  margin: 0;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: right;
+  width: 145px;
+  margin-left: auto;
+}
+
+.footer-social ul {
+  display: flex;
+  width: 141px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  color:#000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path{
+  fill:#000000;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
+}
+
+.footer-social b {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
