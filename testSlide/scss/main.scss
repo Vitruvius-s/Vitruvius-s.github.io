@@ -1,0 +1,137 @@
+.features {
+  margin-bottom: 80px;
+}
+.features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-item {
+  width:300px;
+  text-align: center;
+}
+
+.feature-item h3 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.feature-item h3::after {
+  content: "";
+  bottom: -30px;
+  left: 50%;
+  margin-left: -10px;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+
+}
+
+.feature-item p {
+  margin: 0 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image:
+  url("../img/line.png"),
+  url("../img/pattern-light.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.stock {
+  width: 380px;
+}
+
+.stock-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  list-style: none;
+
+}
+
+.stock-item {
+  margin-bottom: 15px;
+}
+
+.stock-item p {
+  margin: 0;
+}
+
+.stock-item time {
+  text-transform: none;
+}
+
+.gallery {
+  width: 300px;
+}
+
+.gallery-content {
+  height: 215px;
+  width: 286px;
+  margin: 0;
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 215px;
+}
+
+.gallery-container {
+  position: relative;
+  height: 320px;
+}
+
+.gallery-button {
+  box-sizing: border-box;
+  width: 140px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.gallery-button-back {
+  left: 0;
+}
+
+.gallery-button-next {
+  right: 0;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
