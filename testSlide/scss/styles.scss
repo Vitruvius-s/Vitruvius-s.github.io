@@ -892,10 +892,13 @@ p {
     transform: rotate(-40deg);
     background-color: #ffffff;
   }
-
 }
 
-
+@media screen and (min-width: 1400px) {
+  body {
+    padding-left: 700px;
+  }
+}
 
 @media screen and (min-width:800px) {
   .modal-buttonDown {
