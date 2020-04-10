@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1150px) {
+  .emded-responsive iframe {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .emded-responsive iframe {
+    width: 450px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-header-text {
+    background-color: rgba(0,0,0,0.3);
+  }
+  section {
+    padding: 50px 0;
+  }
+  .section-progress h4 {
+    margin-bottom: 45px;
+  }
+  .section-reviews h3,
+  .section-reviews h4 {
+    font-size: 25px;
+  }
+  .section-reviews .blockquote {
+    font-size: 17px;
+    padding-left: 20px;
+    margin-top: 40px;
+    &:before {
+      font-size: 100px;
+      top: -40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .main-header .navbar-nav {
+    background: linear-gradient(45deg, rgba(237,27,51,1) 0%, rgba(68,46,130,1) 100%);
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-header {
+    background-image: url('../img/first_screen_sm.png');
+  }
+  .main-header-text {
+    left: 0;
+    margin: 0 10px;
+    max-width: 100%;
+  }
+  h3,
+  h4 {
+    font-size: 30px;
+  }
+
+  .section-progress .progress-item {
+    padding: 20px 0 0 0;
+    &:hover {
+      background-color: #4d2d7f;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .emded-responsive iframe {
+    width: 500px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-header-text {
+    top: 90px;
+  }
+  .main-header-button {
+    padding-left: 0;
+  }
+  .main-header-button .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .main-header-button .btn:last-child {
+    margin-top: 10px;
+  }
+  .btn-shadow {
+    box-shadow: 0 5px 0 #ff5990;
+    padding: 10px 15px;
+    margin-right: 0;
+  }
+  .button-case {
+    text-align: center;
+  }
+  .emded-responsive iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section-reviews .carousel-caption {
+    position: static;
+    width: 70%;
+    margin: auto;
+  }
+  .scrollToTop {
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-tabs .nav-pills .nav-link {
+    padding: 8px 16px;
+    text-align: center;
+  }
+  .section-tabs .nav-pills .nav-item {
+    width: 100%;
+  }
+
+  .footer-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .thumb {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .emded-responsive iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .main-header .navbar-brand {
+    font-size: 30px;
+  }
+
+  .section-progress h4 {
+    margin-bottom: 45px;
+  }
+}
+
+@media only screen and (max-width: 324px) {
+  .copyright li span {
+    padding-left: 0px;
+  }
+}
